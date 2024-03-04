@@ -1,61 +1,75 @@
 @import "../../vars.css";
 
-.container {
+.card {
+  width: 18em;
+  height: 24.5em;
+  background: #171717;
+  transition: 1s ease-in-out;
   display: flex;
+  border-radius: 15px;
+  perspective: 1000px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid white;
   flex-direction: column;
-  border-radius: 10px;
-  background: linear-gradient(180deg, red 0%, yellow 100%);
-  box-shadow: 0 16px 14px 0 #04152d;
-  padding: 18px 24px;
-  max-width: 345px;
+  margin-right: 2rem;
+}
+.card span {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 1em;
 }
 
-.image {
-  margin-bottom: 26px;
-}
-
-.title {
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.description {
-  margin-top: 6px;
-  font-size: 25px;
+.card .info {
   font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 0.72em;
+  margin: 1em;
 }
 
-.skills {
-  width: 100%;
-  margin-top: 14px;
+.card .img {
+  width: 13rem;
+  height: 10rem;
+  background: white;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.card .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card a {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: 0.4s ease-in-out;
+}
+
+.card a:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+}
+.buttons {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 6px;
-  list-style: none;
+  margin-bottom: 1.2rem;
 }
-
-.skill {
-  font-size: 25px;
-  font-weight: 400;
-  border-radius: 100px;
-  background: var(--color-dark);
-  padding: 2px 22px;
-}
-
-.links {
-  width: 100%;
-  margin-top: 26px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.link {
-  text-decoration: none;
-  color: var(--color-text);
-  font-size: 30px;
-  font-weight: 600;
-  border-radius: 100px;
-  background: var(--color-primary);
-  padding: 1px 22px;
+.card:hover {
+  transform: translateY(-15px) rotateX(3deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

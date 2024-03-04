@@ -4,33 +4,25 @@ import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
 
 export const ProjectCard = ({
-  project: { title, imageSrc, description, skills, demo, source },
+  project: { title, imageSrc, description, demo, source },
 }) => {
   return (
-    <div className={styles.container}>
-      <img
-        src={getImageUrl(imageSrc)}
-        alt={`Image of ${title}`}
-        className={styles.image}
-      />
-      <h3 className={styles.title}>{title}</h3>
-      <p className={styles.description}>{description}</p>
-      <ul className={styles.skills}>
-        {skills.map((skill, id) => {
-          return (
-            <li key={id} className={styles.skill}>
-              {skill}
-            </li>
-          );
-        })}
-      </ul>
-      <div className={styles.links}>
-        <a href={demo} className={styles.link}>
-          Demo
-        </a>
-        <a href={source} className={styles.link}>
-          Source
-        </a>
+    <div className={styles.cards}>
+      <div class={styles.card}>
+        <div class={styles.img}>
+          <img
+            src={getImageUrl(imageSrc)}
+            alt={`Image of ${title}`}
+            className={styles.img}
+          />
+        </div>
+        <span>{title}</span>
+        <p class={styles.info}>{description}</p>
+        <div class={styles.share}></div>
+        <div className={styles.buttons}>
+          <a href={demo}>Demo</a>
+          <a href={source}>Source</a>
+        </div>
       </div>
     </div>
   );
