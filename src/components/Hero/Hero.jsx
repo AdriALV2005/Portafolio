@@ -13,9 +13,26 @@ export const Hero = () => {
           doloremque pariatur praesentium ut eos ad molestias quod, dolorem,
           repudiandae ullam. Saepe, iste!
         </p>
-        <a href="adrimon7221@gmail.com" className={styles.contactBtn}>
-          Contact Me
-        </a>
+ 
+
+        <button class={styles.btn}>
+  <div class={styles.original}>Contact me!</div>
+  <div class={styles.letters}>
+    
+    <span>T</span>
+    <span>H</span>
+    <span>A</span>
+    <span>N</span>
+    <span>K</span>
+    <span>S</span>
+  </div>
+</button>
+
+
+
+
+
+
       </div>
       <img
         src={getImageUrl("hero/heroImage.png")}
