@@ -26,7 +26,7 @@
 }
 
 .aboutImage {
-  width: 35%;
+  width: 50%;
 }
 
 .aboutItems {
@@ -42,7 +42,7 @@
   align-items: center;
   border-radius: 20px;
   list-style: none;
-  padding: 25px;
+  padding: 10px;
   background-image: linear-gradient(
     90deg,
     rgba(165, 215, 232, 0.42) 0%,
@@ -58,35 +58,31 @@
 }
 
 .aboutItem h3 {
-  font-size: 25px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 .aboutItem p {
-  font-size: 25px;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 830px) {
-  .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .content {
     flex-direction: column;
   }
-
   .aboutImage {
     display: none;
   }
 
   .aboutItems {
     margin-top: 29px;
+
+  }
+  .aboutItem {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
   }
 
-  .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  
 }
