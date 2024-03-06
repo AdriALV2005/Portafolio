@@ -1,7 +1,12 @@
 @import "./vars.css";
 
 .App {
-  background-color: var(--color-bg);
+  background: linear-gradient(
+    0deg,
+    rgba(105, 55, 254) 0%,
+    rgb(254, 30, 152) 50%,
+    rgb(182, 41, 254) 100%
+  );
   width: 100%;
   height: 100%;
   overflow: hidden;

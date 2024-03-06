@@ -3,13 +3,13 @@
 .card {
   width: 18em;
   height: 24.5em;
-  background: #171717;
+  background: rgba(12, 12, 12, 0.6);
   transition: 1s ease-in-out;
   display: flex;
   border-radius: 15px;
   perspective: 1000px;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  border: 1px solid white;
+
   flex-direction: column;
   margin-right: 2rem;
 }
